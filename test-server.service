@@ -1,0 +1,12 @@
+[Unit]
+  Description=test server
+ 
+[Service]
+  ExecStart=/home/f1xdsl/testc/TESTSERVER
+  Type=idle
+  KillMode=process
+ 
+  SyslogIdentifier=test-server
+  SyslogFacility=daemon
+ 
+  Restart=on-failure
